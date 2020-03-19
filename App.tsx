@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import BounceButton from './src/components/buttons';
 import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <NavigationContainer>
       <View style={styles.container}>
         <Text style={styles.title}>RN Animations</Text>
+        <BounceButton />
       </View>
     </NavigationContainer>
   );
