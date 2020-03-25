@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import BounceButton from './src/components/buttons';
 import {NavigationContainer} from '@react-navigation/native';
+import {BounceButton, SubmitButton} from './src/components/buttons';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <View style={styles.container}>
         <Text style={styles.title}>RN Animations</Text>
         <BounceButton />
+        <SubmitButton />
       </View>
     </NavigationContainer>
   );
@@ -23,6 +25,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: '600',
+    marginVertical: 14,
   },
 });
 
