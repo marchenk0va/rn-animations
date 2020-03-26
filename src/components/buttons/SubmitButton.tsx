@@ -88,6 +88,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
+    letterSpacing: 2,
     color: '#222222',
   },
 });

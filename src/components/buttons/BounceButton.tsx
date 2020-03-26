@@ -40,7 +40,7 @@ class BounceButton extends React.Component {
         onPressIn={this.handlePressIn}
         onPressOut={this.handlePressOut}>
         <Animated.View style={[styles.container, animatedStyle]}>
-          <Text style={styles.button}>Bounce</Text>
+          <Text style={styles.buttonTitle}>Bounce</Text>
         </Animated.View>
       </TouchableWithoutFeedback>
     );
@@ -56,10 +56,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#82E0AA',
     borderRadius: 10,
   },
-  button: {
+  buttonTitle: {
     color: '#FFFFFF',
     fontSize: 20,
     fontWeight: '500',
+    letterSpacing: 0.4,
   },
 });
 
