@@ -1,6 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Buttons from '../components/buttons';
+import ScrollableHeader from '../components/scrolls';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,6 +19,7 @@ const BottomTabNavigation = () => {
   return (
     <Tab.Navigator tabBarOptions={tabBarOptionsStyle}>
       <Tab.Screen name="Buttons" component={Buttons} />
+      <Tab.Screen name="Scroll" component={ScrollableHeader} />
     </Tab.Navigator>
   );
 };
