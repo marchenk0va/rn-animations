@@ -2,6 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Buttons from '../components/buttons';
 import ScrollableHeader from '../components/scrolls';
+import SwipeRow from '../components/gestures';
 
 const Tab = createBottomTabNavigator();
 
@@ -11,7 +12,7 @@ const tabBarOptionsStyle = {
     fontWeight: '600',
     letterSpacing: 1,
   },
-  activeTintColor: '#48C9B0',
+  activeTintColor: '#32D3F0',
   inactiveTintColor: '#B2BABB',
 };
 
@@ -20,6 +21,7 @@ const BottomTabNavigation = () => {
     <Tab.Navigator tabBarOptions={tabBarOptionsStyle}>
       <Tab.Screen name="Buttons" component={Buttons} />
       <Tab.Screen name="Scroll" component={ScrollableHeader} />
+      <Tab.Screen name="Gestures" component={SwipeRow} />
     </Tab.Navigator>
   );
 };
